@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hug, Nathan</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+<style>
+.mySlides {display:none;}
+</style>
+    <body id="timelineBody">
+		
+      <!-- This navbar is for users to select certain milestones of my life.
+      		Note, this element should run vertically down the left side of my page. -->
+	   <div id="navbarTimeline">
+	      <nav id="navbar"> 
+	      	<ul id="timelineNav">
+	      		<li id="homepage"><a id="homepageLink" href="index.html" style="text-decoration: none;"">Home</a></li>
+	      		<li id="mileStoneOneLink"><a id="milestoneOneALink" href="#mileOne" style="text-decoration: none;">Made in</a></li>
+	      		<li id="mileStoneTwoLink"><a id="milestoneTwoALink" href="#mileTwo" style="text-decoration: none;">High School</a></li>
+	      		<li id="mileStoneThreeLink"><a id="milestoneThreeALink" href="#mileThree" style="text-decoration: none;">College</a></li>
+	      		<li id="mileStoneFourLink"><a id="milestoneFourALink" href="#mileFour" style="text-decoration: none;">Study Abroad</a></li>
+	      		<li id="mileStoneFifthLink"><a id="milestoneFiveALink" href="#mileFive" style="text-decoration: none;">College <br>graduation</a></li>
+	      	</ul>
+	      </nav>
+
+	      <!-- This div element contains ALL of my milestones, achievements, life story, etc. -->
+	      <div id="timeline">
+
+	      	<div id="mileOne">
+	      		<div id="mileOneCard">
+	      			<p id="mileOneEnglish" onclick="translateEngMileOne()">English</p>
+					<p id="mileOneJapanese" onclick="translateJpnMileOne()">日本語</p>
+					<h2>Birth</h2>
+	      			<p id="mileOneTranslate">I was born in Milwaukee, WI.</p>					
+	      		</div>
+	      	</div>
+
+	      	<div id="mileTwo">
+	      		
+		      	<div class="slideContainer">
+		      		<img class="mySlides" src="Media/FHS.jpg" height="945px" width="100%">
+					<img class="mySlides" src="Media/ss2.jpg" height="945px" width="100%">
+					<img class="mySlides" src="Media/ss3.jpg" height="945px" width="100%">
+					<img class="mySlides" src="Media/ss4.jpg" height="945px" width="100%">
+					<button class="left" onclick="plusDivs(-1)">&#10094;</button>
+  					<button class="right" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+
+				<div id="mileTwoCard">
+		      			<h2>Franklin High School</h2>
+		      			<p>I attended Franklin High School in Franklin, WI. I graduated
+		      			with the class of 2009.</p>
+		      	</div>
+				
+	      	</div>
+
+	      	<div id="mileThree">
+	      		<div id="mileThreeCard">
+	      			<h2>College</h2>
+	      			<p>I attended the Unversity of Wisconsin-Milwaukee.</p>
+	      		</div>
+	      	</div>
+
+	      	<div id="mileFour">
+	      		<div id="mileFourCard">
+	      			<h2>Study Abroad</h2>
+	      			<p>I participated on a study abroad program and attended Nagasaki Siebold Unviversity for one year.</p>
+	      		</div>
+	      	</div>
+
+	      </div>
+	  </div>
+	  <!-- Below script is for manual slideshow -->
+		  	<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  if (n > x.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+				    x[i].style.display = "none";  
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				}
+			</script>
+		<script src="timeline.js" charset="utf-8"></script>
+    </body>
+</html>

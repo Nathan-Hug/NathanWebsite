@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;1,400;1,500&family=Oswald:wght@300&display=swap');
+
+#indexBody {
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	background-size: cover;
+	background-image: url('Media/jump.JPG');
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#timelineBody {
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#headerContainer {
+	height: 5%;
+	width: 40%;
+	margin: 0 0 0 30%;
+	vertical-align: middle;
+	display: inline-flex;
+	justify-content: space-between;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.7); 
+}
+
+.headerNav {
+	color: white;
+}
+
+.headerNav:hover {
+	color: white;
+	cursor: default; 
+}
+
+
+
+#headerCardOne {
+	opacity: 0.3;
+	display: flex;
+	font-family: 'Josefin Sans', sans-serif;
+	width: auto;
+	height: 2em;
+	font-size: 25px;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(19, 1, 1, 0.1);	
+	/*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+	border-style: solid;
+	border-bottom: none;
+	border-width: 2px;
+	border-color: white;
+}
+
+
+
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	color: white;
+	font-size: 25px; 
+	background-color: white; /* Fallback color */
+	background-color: rgba(155, 155, 155, 0.4); /* Black w/ opacity */
+	margin: auto;
+	padding: 20px;
+	border: 2px solid white;
+	height: auto;
+	width: 40%;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+#headerCardOne:hover {
+	animation: borderFade ease .4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	
+}
+
+
+
+
+
+@keyframes borderFade {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#headerCardTwo {
+	opacity: 0.3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Josefin Sans', sans-serif;
+	width: auto;
+	height: 2em;
+	font-size: 25px;
+	background-color: rgba(19, 1, 1, 0.1);
+	border-style: solid;
+	border-bottom: none;
+	border-width: 2px;
+	border-color: white;	
+}
+
+
+#headerCardTwo:hover {
+	animation: borderFade ease .4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	
+}
+
+@keyframes borderFade {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#headerCardTwoLink {
+	text-decoration: none;
+	color: white;
+}
+
+#CodingPortfolioLink {
+	text-decoration: none;
+	color: white;
+}
+
+#headerCardThree{
+	opacity: 0.3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Josefin Sans', sans-serif;
+	width: auto;
+	height: 2em;
+	font-size: 25px;
+	background-color: rgba(19, 1, 1, 0.1);	
+	border-style: solid;
+	border-bottom: none;
+	border-width: 2px;
+	border-color: white;
+}
+
+
+#headerCardThree:hover {
+	animation: borderFade ease .4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	
+}
+
+@keyframes borderFade {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* styling for Timeline.html below */
+
+#navbarTimeline {
+	font-family: 'Josefin Sans', sans-serif;
+	display: grid;
+	grid-template-columns: 10% 90%;
+	margin: 0px 0px 0px 0px;
+}
+
+#timelineNav {
+	margin: 0px 0px 0px 15px;
+}
+
+#navbar {
+	background-color: #00000083;
+	background-image: linear-gradient(147deg, #00000083 0%, #2c3e50 74%);
+	font-size: 25px;
+	border-style: solid;
+	border-color: white;
+	margin: 0px 0px 0px 0px;
+}
+
+#homepage {
+	color: white;
+	list-style: none;
+	position: fixed;
+	left: .5%;
+}
+
+#homepageLink {
+	color: white;
+}
+
+#milestoneOneALink {
+	color: white;
+}
+
+#milestoneTwoALink {
+	color: white;
+}
+
+#milestoneThreeALink {
+	color: white;
+}
+
+#milestoneFourALink {
+	color: white;
+}
+
+#milestoneFiveALink {
+	color: white;
+}
+
+#mileStoneOneLink {
+	list-style: none;
+	position: fixed;
+	top: 5%;
+	left: .5%;
+}
+
+#mileStoneTwoLink {
+	list-style: none;
+	position: fixed;
+	top: 10%;
+	left: .5%;
+}
+
+#mileStoneThreeLink {
+	list-style: none;
+	position: fixed;
+	top: 15%;
+	left: .5%;
+}
+
+#mileStoneFourLink {
+	list-style: none;
+	position: fixed;
+	top: 20%;
+	left: .5%;
+}
+
+#mileStoneFifthLink {
+	list-style: none;
+	position: fixed;
+	top: 25%;
+	left: .5%;
+}
+
+#timeline {
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+}
+
+#mileOne {
+	/*Insert image of Franklin?*/
+	display: flex;
+	background-image: url('Media/Milwaukee.jpg');
+	background-size: cover;
+	height: 100vh;
+	width: 89vw;
+	margin: -3px 0 0 0;
+	
+}
+
+#mileOneCard {
+	position: relative;
+	text-align: center;
+	background-color: white; /* Fallback color */
+	background-color: rgba(155, 155, 155, 0.4); /* Black w/ opacity */
+	border-style: solid;
+	border-color: white;
+	/* Keep above, change below for card sizing, positioning */
+	height: 7em;
+	width: auto;
+	top: 10%;
+	left: 20%;
+	padding: 5px 5px 5px 5px;
+
+}
+
+#mileOneEnglish {
+	font-size: 17px;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(0,0,0,0.22);
+}
+#mileOneJapanese {
+	font-size: 15px;
+	float: right;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(0,0,0,0.22);
+}
+
+#mileTwo {
+	background-size: cover;
+	height: 100vh;
+	width: 79vw;
+	margin: 0 0 0 0;	
+}
+
+#mileTwoCard {
+	position: relative;
+	top: 5%;
+	float: right;
+	text-align: center;
+	background-color: white; /* Fallback color */
+	background-color: rgba(155, 155, 155, 0.4); /* Black w/ opacity */
+	border-style: solid;
+	border-color: white;
+	/* Keep above, change below for card sizing, positioning */
+	padding: 5px 5px 5px 5px;
+	height: auto;
+	width: auto;
+	
+}
+
+#mileThree {
+	background-image: url('Media/MitchellHall.jpg');
+	background-size: cover;
+	height: 107vh;
+	width: 89vw;
+	margin: 0 0 0 0;
+	
+}
+
+#mileThreeCard {
+	position: relative;
+	text-align: center;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	border-style: solid;
+	border-color: white;
+	background-color: white; /* Fallback color */
+	background-color: rgba(155, 155, 155, 0.4); /* Black w/ opacity */
+	/* Keep above, change below for card sizing, positioning */
+	padding: 5px 5px 5px 5px;
+	height: auto;
+	width: 15%;
+	top: 10%;
+	left: 20%;
+}
+
+#mileFour {
+	background-image: url('Media/Siebold.jpg');
+	background-size: cover;
+	height: 100vh;
+	width: 89vw;
+	
+}
+
+#mileFourCard {
+	position: relative;
+	text-align: center;
+	background-color: white; /* Fallback color */
+	background-color: rgba(155, 155, 155, 0.4); /* Black w/ opacity */
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	border-style: solid;
+	border-color: white;
+	/* Keep above, change below for card sizing, positioning */
+	height: auto;
+	width: 15%;
+	padding: 5px 5px 5px 5px;
+	top: 10%;
+	left: 20%;
+}
+
+.left {
+	position: relative;
+	float: left;
+	top: -500px;
+	height: 70px;
+	width: 25px;
+	background-color: rgba(155,155,155,0.6);
+	filter: invert(1);
+}
+
+.left:hover {
+	cursor: pointer;
+	background-color: white;
+}
+
+.right {
+	position: relative;
+	float: right;
+	top: -500px;
+	height: 70px;
+	width: 25px;
+	background-color: rgba(155,155,155,0.6);
+	filter: invert(1);
+
+}
+
+.right:hover {
+	cursor: pointer;
+	background-color: white;
+}
+
+.slideContainer { 
+position: absolute;
+}
+
+#translateOne {
+	position: relative;
+	cursor: pointer;
+	background-color: rgba(155,155,155,0.1);
+	border: none;
+	height: 210px;
+	width: 250px;
+	margin: -55px;
+}
+
+#codingPortfolioModalContent {
+	width: 75%;
+}
+
+#skillsHeader {
+	text-align: center;
+}
+
+#projectsHeader {
+	text-align: center;
+}
+
+#tileContainer {
+	text-align: center;
+	display: flex;
+}
+
+#projectTileOne {
+	width: 15em;
+	height: auto;
+	background-color:rgba(13, 142, 228, 0.4);
+	margin: 0 .5em 0 0;
+}
+
+#projectTileOne:hover {
+	cursor: pointer;
+}
+
+
+#projectTileTwo {
+	width: auto;
+	height: auto;
+	background-color:rgba(13, 142, 228, 0.4);
+	margin: 0 .5em 0 .5em;
+}
+
+#projectTileTwo:hover {
+	cursor: pointer;
+}
+
+
+#projectTileThree {
+	width: 15em;
+	height: auto;
+	background-color:rgba(13, 142, 228, 0.4);
+	margin: 0 .5em 0 .5em;
+}
+
+#projectTileThree:hover {
+	cursor: pointer;
+}
+
+
+#projectTileFour {
+	width: 15em;
+	height: auto;
+	background-color:rgba(13, 142, 228, 0.4);
+	margin: 0 0 0 .5em;
+}
+
+#projectTileFour:hover {
+	cursor: pointer;
+}
