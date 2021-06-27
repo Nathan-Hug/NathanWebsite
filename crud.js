@@ -24,9 +24,6 @@ function resetForm () {
 }
 
 deleteNoteRow = function () {
-	//row = tr
-	//document.getElementById("completeNotes").deleteRow(row.rowIndex);
-	//console.log(row);
 	var td = event.target.parentElement; 
 	td.remove();
 }
