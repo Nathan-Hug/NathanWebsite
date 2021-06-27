@@ -1,55 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>CRUD</title>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
 	<link rel="stylesheet" href="crudstyles.css"> <!-- insert styling sheet here */ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+    <div id="wholeContainer">
+        <div id="notesContainer">
+            <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off" id="notesForm">                    
                     <div>
-                        <label>Full Name</label>
-                        <input type="text" name="fullName" id="fullName">
+                        <label id="notesLabel">Notes</label>
+                        <input required type="text" name="notes" id="notes" placeholder="Enter your note" style="font-size: 30pt">
                     </div>
-                    <div>
-                        <label>EMP Code</label>
-                        <input type="text" name="empCode" id="empCode">
-                    </div>
-                    <div>
-                        <label>Salary</label>
-                        <input type="text" name="salary" id="salary">
-                    </div>
-                    <div>
-                        <label>City</label>
-                        <input type="text" name="city" id="city">
-                    </div>
-                    <div class="form-action-buttons">
+
+                    <div class="form-actions-buttons" id="submitButton">
                         <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </td>
+                    </div>                
+            </form>
+            
+        </div>
+        <div id="completeNotesContainer">
+            <tr>
+                <td>
+                    <table class="list" id="completeNotes" onclick="deleteNoteRow()">
+                        <thead>
+                            
+                        </thead>
+                        <tbody>
 
-            <td>
-                <table class="list" id="employeeList">
-                    <thead>
-                        <tr>
-                            <th>Full Name</th>
-                            <th>EMP Code</th>
-                            <th>Salary</th>
-                            <th>City</th>
-                            <th>Edit / Delete</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </div>
+    </div>
     <script src="crud.js"></script>
 </body>
 </html>
