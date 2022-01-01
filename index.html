@@ -2,80 +2,105 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hug, Nathan</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles20211231.css">
+	<link rel="icon" type="image/png" href="Media/Huggie peace.png"/>
 </head>
 <body id="indexBody">
-	<div id="headerContainer">
-			<div id="headerCardOne">
-				<h3 class="headerNav">About Me</h3>
-			</div>
 
-			<div id="headerCardTwo">
-				<h3 class="headerNav"><a id="headerCardTwoLink" href="Timeline.html" style="text-decoration: none;">My story</a></h3>					
-			</div>
-
-			<div id="headerCardThree">
-				<h3 class="headerNav"><a id="CodingPortfolioLink" style="text-decoration: none">Coding Portfolio</a></h3>
-				
-				<!-- Coding Portfolio:
-				1. Clone a website: HTML CSS
-				2. CRUD app (Create-Read-Update-Delete): JS, data structures
-				3. API-connected website
-				4. Perfect score website: Use Chome Lighthouse to rate a website-->
-			</div>
+	
+	<div id="headContainer" class="hoverItem">
+		<h2 id="headWelcome" class="hoverItem">Hello, World.</h1>
+		<h1 id="headWelcome2" class="hoverItem">I'm Nathan Hug,</h2>
+		<h3 id="headWelcome3" class="hoverItem">a web developer.</h3>
 	</div>
 
-	<div id="aboutMeModal" class="modal">
-		<div class="modal-content">
-			<span class="close">&times;</span>
-			<h3>A little about me...</h3>
-			<p>Born and raised in Milwaukee, WI, I graduated from Franklin High School with the class of 2009.
-				I continued my education at the University of Wisconsin-Milwaukee where I pursued two majors, Linguistics
-				and Japanese. While at Unviversity, I participated on a student exchange program at Nagasaki Siebold University for one year.
-				After returning to finish my degrees, I graduated from university in May of 2014. That summer in August, I 
-				left America to teach English in Japan as an Assistant Language teacher in Japan. In August of 2017,
-				I returned to Milwaukee, WI. Three months later in November, I found work at NPR of America, a Japanese 
-				piston ring production company. I started as an Interpreter / Translator, but moved into an IT role
-				several months after I started. In March of 2020, I left NPR for an opportunity at a Japanese
-				software company in Torrance, CA where my 
-				wife and I currently live.
-			</p>
+	<!-- Below is About Me & Portfolio modal code -->
+		<div id="buttonContainer">
+				<div id="aboutmeButton">
+					<h3 class="button">About Me</h3>
+				</div>
+
+				<div id="portfolioButton">
+					<h3 class="button">Coding Portfolio</a></h3>
+					
+					 <!--
+						 Coding Portfolio:
+					1. Mock website, coffee shop
+					2. CRUD app (Create-Read-Update-Delete): JS, data structures
+					3. API-connected website
+					4. Perfect score website: Use Chome Lighthouse to rate a website
+					 -->
+				</div>
 		</div>
-	</div>
 
-	<div id="codingPortfolioModal" class="modal">
-		<div class="modal-content" id="codingPortfolioModalContent">
-			<span class="close">&times;</span>
-			<h3 id="skillsHeader">Skills</h3>
-				<p>HTML & CSS - Decent<br>
-					JS - OK
-				</p>
-			<h3 id="projectsHeader">Projects</h3>
+		<div id="headingPicture" class="hoverItem"></div><!-- This sets the picture background-->
 
-			<div id="tileContainer">
-				<div id="projectTileOne">
-					<h4>1. Website Clone</h4>
-					<p>CSS & HTML<br>
-				</div>
+		<div id="aboutMeModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div id="bioPicContainer"></div>
 
-				<div id="projectTileTwo" onclick="projectTwoFunc()">
-					<h4>2. CRUD Application</h4>
-					<p>Javascript & data structures, DOM manipulation<br>
-				</div>
+				<div id="bioInfoContainer">
 				
-				<div id="projectTileThree">
-					<h4>3. API-Connected website</h4>
-					<p>Javascript, APIs<br>
-				</div>
-
-				<div id="projectTileFour">
-					<h4>4. Perfect Score Website</h4>
-					<p>For building clean and stable websites using efficient code<br>
+					<h3 class="aboutMeModalP">A little about me...</h3>
+					<p class="aboutMeModalP"> Hello! My name is Nathan. Welcome to my website! (still under construction)<br>
+					I'm currently learning how to code with focus on HTML, CSS and Javascript. Some of my other hobbies include beach volleyball, PC gaming, computer building and eating!
+					Please take a look around and enjoy your stay.</p>
 				</div>
 			</div>
 		</div>
-	</div>
+
+		<div id="codingPortfolioModal" class="modal">
+			<div class="modal-content" id="codingPortfolioModalContent">
+				<span class="close">&times;</span>
+				<div id="skillsHeaderContainer">
+					<img src="Media/skills.png" id="skillsIcon" alt="skills">
+					<h3 id="skillsHeader">Skills</h3>
+				</div>
+				<div id="skillsContainer">	
+					<div id="skillsBoxOne" class="skillsBox"><p class="skills">HTML & CSS</p><br>
+						<p class="skillsCircle">●●〇〇〇</p>
+					</div>
+					<div id="skillsBoxTwo" class="skillsBox"><p class="skills">Javascript</p><br>
+						<p class="skillsCircle">●〇〇〇〇</p>
+					</div>
+				</div>
+
+				<div id="projectContainer">
+					<img src="Media/projects.jpg" id="projectsIcon" alt="projects">
+					<h3 id="projectsHeader">Projects</h3>
+				</div>
+				
+				<div id="tileContainer">
+					<div id="projectTileOne" class="projectTile">
+						<h4>1. Website Clone <br>(under construction)</h4>
+						<p>CSS & HTML<br>
+					</div>
+
+					<div id="projectTileTwo" class="projectTile" onclick="projectTwoFunc()">
+						<h4>2. CRUD Application</h4>
+						<p>Javascript & data structures, DOM manipulation<br>
+					</div>
+					
+					<div id="projectTileThree" class="projectTile">
+						<h4>3. API-Connected website (under construction)</h4>
+						<p>Javascript, APIs<br>
+					</div>
+
+					<div id="projectTileFour" class="projectTile">
+						<h4>4. Perfect Score Website (under construction)</h4>
+						<p>For building clean and stable websites using efficient code<br>
+					</div>
+
+					<div id="projectTileFive" class="projectTile" onclick="projectFiveFunc()">
+						<h4>5. Okonomiyaki Finder</h4>
+						<p>Okonomiyaki is a Japanese savory pancake filled with deliciousness</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	
 	<script src="index.js" charset="utf-8"></script>
 </body>
