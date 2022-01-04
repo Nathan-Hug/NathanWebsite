@@ -1,6 +1,6 @@
 //Modal for About Me on Index page
 var modal = document.getElementById("aboutMeModal");
-var aboutmelink = document.getElementById("headerCardOne");
+var aboutmelink = document.getElementById("aboutmeButton");
 var spanOne = document.getElementsByClassName("close")[0];
 
 aboutmelink.onclick = function() {
@@ -21,7 +21,7 @@ window.onclick = function() {
 
 //Modal for Coding Portfolio on Index page
 var modalCodingPortfolio = document.getElementById("codingPortfolioModal");
-var codingPortfoliolink = document.getElementById("headerCardThree");
+var codingPortfoliolink = document.getElementById("portfolioButton");
 var spanTwo = document.getElementsByClassName("close")[1];
 
 codingPortfoliolink.onclick = function() {
@@ -34,4 +34,8 @@ spanTwo.onclick = function() {
 
 projectTwoFunc = function() {
 	window.open("crud.html")
+}
+
+projectFiveFunc = function() {
+	window.open("finder.html")
 }
