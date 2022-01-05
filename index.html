@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hug, Nathan</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/png" href="Media/Huggie peace.png"/>
+</head>
+<body id="indexBody">
+
+	
+	<div id="headContainer" class="hoverItem">
+		<h2 id="headWelcome" class="hoverItem">Hello, World.</h1>
+		<h1 id="headWelcome2" class="hoverItem">I am Nathan Hug</h2>
+		<h3 id="headWelcome3" class="hoverItem">a web developer.</h3>
+	</div>
+
+	<!-- Below is About Me & Portfolio modal code -->
+		<div id="buttonContainer">
+				<div id="aboutmeButton">
+					<h3 class="button">About Me</h3>
+				</div>
+
+				<div id="portfolioButton">
+					<h3 class="button">Coding Portfolio</a></h3>
+					
+					 <!--
+						 Coding Portfolio:
+					1. Mock website, coffee shop
+					2. CRUD app (Create-Read-Update-Delete): JS, data structures
+					3. API-connected website
+					4. Perfect score website: Use Chome Lighthouse to rate a website
+					 -->
+				</div>
+		</div>
+
+		<div id="headingPicture" class="hoverItem"></div><!-- This sets the picture background-->
+
+		<div id="aboutMeModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div id="bioPicContainer"></div>
+
+				<div id="bioInfoContainer">
+				
+					<h3 class="aboutMeModalP" style="font-size: 35pt">A little about me...</h3>
+					<p class="aboutMeModalP" style="font-size: 18pt">My name is Nathan, and I was born and raised in WI, US.
+						In 2014, I graduated with a dual major in Linguistics and Japanese. After graduation, I taught English in Japan for three years, during
+						that time I was blessed to meet so many life long friends, and also my wife!<br>
+						<br>I began learning about web development in 2020, and after learning the basics, I created my very own website.
+						Creating and publishing a website from the ground up has been an extremely rewarding experience.<br><br>
+						My attitude towards life is: Never stop growing<span class="aboutMeModalP"style="font-size: 8pt">I'm not a plant, I swear!</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="codingPortfolioModal" class="modal">
+			<div class="modal-content" id="codingPortfolioModalContent">
+				<span class="close">&times;</span>
+				
+				<div id="projectContainer">
+					<h3 id="projectsHeader">Projects</h3>
+				</div>
+				
+				<div id="tileContainer">
+					<div id="projectTileOne" class="projectTile">
+						<h4>1. Mock Restaurant <br>(in progress)</h4>
+						<p>CSS & HTML<br>
+					</div>
+
+					<div id="projectTileTwo" class="projectTile" onclick="projectTwoFunc()">
+						<h4>2. CRUD Application</h4>
+						<p>Javascript & data structures, DOM manipulation<br>
+					</div>
+					
+					<div id="projectTileThree" class="projectTile">
+						<h4>3. API-Connected website <br>(in progress)</h4>
+						<p>Javascript, APIs<br>
+					</div>
+
+					<div id="projectTileFour" class="projectTile">
+						<h4>4. Perfect Score Website (under construction)</h4>
+						<p>For building clean and stable websites using efficient code<br>
+					</div>
+
+					<div id="projectTileFive" class="projectTile" onclick="projectFiveFunc()">
+						<h4>5. Okonomiyaki Finder</h4>
+						<p>Okonomiyaki is a Japanese savory pancake filled with deliciousness</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<script src="index.js" charset="utf-8"></script>
+</body>
+</html>

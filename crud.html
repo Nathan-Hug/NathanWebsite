@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+	<link rel="stylesheet" href="crudstyles.css"> <!-- insert styling sheet here */ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<body>
+    <div id="wholeContainer">
+        <div id="notesContainer">
+            <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off" id="notesForm">                    
+                    <div>
+                        <label id="notesLabel">Notes</label>
+                        <input required type="text" name="notes" id="notes" placeholder="Enter your note" style="font-size: 30pt">
+                    </div>
+
+                    <div class="form-actions-buttons" id="submitButton">
+                        <input type="submit" value="Submit">
+                    </div>                
+            </form>
+            
+        </div>
+        <div id="completeNotesContainer">
+            <tr>
+                <td>
+                    <table class="list" id="completeNotes" onclick="deleteNoteRow()">
+                        <thead>
+                            
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </div>
+    </div>
+    <script src="crud.js"></script>
+</body>
+</html>
