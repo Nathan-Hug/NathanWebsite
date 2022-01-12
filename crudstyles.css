@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 html {
     height: 100vh;
 }
@@ -7,97 +9,90 @@ body {
 }
 
 #wholeContainer {
-    width: 65%;
-    display: flex;
+    width: 70%;
     justify-content: center;
-    margin: 5% 0 0 20%;
+    margin: 5% 0 0 15%;
     z-index: 1;
 }
 
 table {
     background-color: thistle;
     border-collapse: collapse;
+    margin: 5px;
 }
 
 #notesContainer {
-    height: 20em;
-    width: 50%;
-    background-color: teal;
-    display: inline-flex;
-    border: 1px solid white;
+    flex-direction: row;
 }
 
-#completeNotesContainer{
-    width: 50%;
-    height: 40em;
-    overflow-y: scroll;
-}
-
-#completeNotesContainer::-webkit-scrollbar {
-    display: none;
-  }
-
-#completeNotes {
-    width: 100%;
-}
-
-#notesLabel {
-    font-size: 44pt;
-    color: white;
-    padding: 15px 15px 15px 15px;
+#notesWrapper {
+    margin: 10px;
+    display: flex;
+    justify-content: start;
 }
 
 #notes {
-    display: inline-flex;
-    width: auto; 
-    margin: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
+    font-family: 'Quicksand', sans-serif;
+    width: 75%;
 }
 
-#notesForm {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    width: 98%;
-}
-
-td, th {
-    border: 1px solid white;
-    text-align: left;
-    padding: 8px;
-}
-
-.tr, td {
-    height: 2em;
-}
-
-td{
-    font-size: 30pt;
-}
-
-td:hover {
-    -moz-box-shadow:    inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;
-}
-
-#submitButton{
-    height: 5.5em;
-    display: flex;
-    margin: 3.5em 0 0 0;
-}
 
 input[type=submit]{
-    width: auto;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    font-size: 20pt;
     background-color: #ddd;
     color: #000;
     padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
-form div.form-action-buttons {
-    text-align: center;
+#completeNotesContainer{
+    height: 40em;
+    overflow-y: scroll;
+    background-color: teal;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+.list {
+    width: 99%;
+}
+
+/* todo items, edit button and delete buttons are all td, they are cells */
+
+
+td{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24pt;
+    border: 3px solid teal;
+    height: 45px;
+}
+
+
+td:hover {
+    -moz-box-shadow:    inset 0 0 5px teal;
+    -webkit-box-shadow: inset 0 0 5px teal;
+    box-shadow:         inset 0 0 5px teal;
+}
+#submitButtonDiv {
+    margin: 0 0 0 15px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    font-size: 18pt;
+    margin: 5px;
+    float: right;
+    border-radius: 5px;
+    background-color: ddd;
+    padding: 10px;
+}
+
+#notesRow {
+    width: 88%;
 }

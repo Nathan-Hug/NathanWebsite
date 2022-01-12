@@ -12,32 +12,27 @@
     <div id="wholeContainer">
         <div id="notesContainer">
             <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off" id="notesForm">                    
-                    <div>
-                        <label id="notesLabel">Notes</label>
-                        <input required type="text" name="notes" id="notes" placeholder="Enter your note" style="font-size: 30pt">
-                    </div>
+                    <div id="notesWrapper">
 
-                    <div class="form-actions-buttons" id="submitButton">
-                        <input type="submit" value="Submit">
-                    </div>                
+                        <label id="notesLabel"></label>
+                        <input required type="text" name="notes" id="notes" placeholder="Enter your note" style="font-size: 30pt">
+
+                        <div class="form-actions-buttons" id="submitButtonDiv">
+                            <input id="submitButton" type="submit" value="Submit">
+                        </div>   
+
+                    </div>
             </form>
             
         </div>
+        
         <div id="completeNotesContainer">
-            <tr>
-                <td>
-                    <table class="list" id="completeNotes" onclick="deleteNoteRow()">
-                        <thead>
-                            
-                        </thead>
-                        <tbody>
-
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
+            <table class="list" id="completeNotes">               
+                <tbody>
+                </tbody>
+            </table>
         </div>
     </div>
-    <script src="crud.js"></script>
+    <script src="/crud.js"></script>
 </body>
 </html>
