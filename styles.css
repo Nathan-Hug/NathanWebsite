@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-
 html, body {
 	margin: 0;
 	padding: 0;
@@ -137,10 +136,8 @@ html, body {
 	font-family: 'Quicksand', sans-serif;
 	height: auto;
 	width: 70rem;
-	border-radius: 15px;
 	display: flex;
 	justify-content: center;
-	
   }
   
   /* The Close Button */
@@ -170,9 +167,23 @@ html, body {
 	opacity: 1;
 }
 
-#bioInfoContainer {
+#bioInfoContainer { socialWrapper bioPicContainer
+	background-color: blue;
 	width: 70%;
 	margin: 10px 0 0 25px;
+}
+
+#socialWrapper {
+	margin: 320px 815px 0 0;
+	position: absolute;
+	display: flex;
+	height: 100px;
+	flex-direction: wrap;
+}
+
+.socialLink {
+	margin: 2px;
+	border-radius: 15px;
 }
 
 #bioPicContainer {
@@ -235,6 +246,7 @@ html, body {
 .projectTile {
 	height: 15rem;
 	width: 17rem;
+	border-radius: 25px;
 }
 
 h4 {
@@ -291,6 +303,7 @@ h4 {
 }
 
 @media (max-width: 1000px) {
+	
 	#headerContainer {
 		margin: 1rem 1rem 1rem 1rem;
 		width: 80%;
@@ -305,10 +318,35 @@ h4 {
 		background-position-x: 35%;
 		background-position-y: 1%;
 	}
+
 	.modal-content {
-		margin: 10rem 1rem 0 2rem;
-		width: 75%;
+		color: white;
+		font-size: 25px; 
+		background-image: url(Media/CoffeeGradient2.png);
+		font-family: 'Quicksand', sans-serif;
+		height: auto;
+		width: 70%;
+		display: flex;
+		flex-wrap: wrap;
+		margin: -50px 0 0 12%;
+		overflow: auto;
+	  }
+
+	  #bioPicContainer {
+		  margin: 0 0 0 -10px;
+		  padding: 0;
 	}
+
+	#bioInfoContainer {
+		margin: 60px 0 0 0;
+		padding: 0;
+		width: 95%;
+	}
+		
+	#socialWrapper {
+		margin: 265px 0 0 0;
+	}
+
 	#codingPortfolioModalContent {
 		margin: 8rem 1rem 0 1.5rem;
 		width: 85%;
@@ -342,6 +380,34 @@ h4 {
 		font-size: 25pt;
 	}
 
+	.modal-content {
+		color: white;
+		font-size: 25px; 
+		background-image: url(Media/CoffeeGradient2.png);
+		font-family: 'Quicksand', sans-serif;
+		height: auto;
+		width: 70%;
+		display: flex;
+		flex-wrap: wrap;
+		margin: -50px 0 0 12%;
+		overflow: auto;
+	  }
+
+	  #bioPicContainer {
+		  margin: 0 0 0 -10px;
+		  padding: 0;
+	}
+
+	#bioInfoContainer {
+		margin: 60px 0 0 0;
+		padding: 0;
+		width: 95%;
+	}
+		
+	#socialWrapper {
+		margin: 265px 0 0 0;
+	}
+
 }
 
 @media (max-width: 500px) {
@@ -363,11 +429,22 @@ h4 {
 	}
 
 	.modal-content {
-		font-size: 15pt;
-		align-self: center;
-		margin: 5rem 1rem 0 2.5rem;
-		width: 75%;
+		color: white;
+		font-size: 25px; 
+		background-image: url(Media/CoffeeGradient2.png);
+		font-family: 'Quicksand', sans-serif;
+		height: auto;
+		width: 70%;
+		display: flex;
+		flex-wrap: wrap;
+		margin: -50px 0 0 12%;
+		overflow: auto;
+	  }
+
+	  #socialWrapper {
+		margin: 275px 0 0 0;
 	}
+
 	.headerNav {
 		font-size: 18pt;
 	}
