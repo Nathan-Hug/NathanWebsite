@@ -138,6 +138,7 @@ html, body {
 	width: 70rem;
 	display: flex;
 	justify-content: center;
+	border-radius: 15px;
   }
   
   /* The Close Button */
@@ -255,7 +256,7 @@ h4 {
 }
 
 #projectTileOne {
-	background-color: rgba(13, 142, 228, 0.4);
+	background-color: rgba(225,204,177, 0.4);
 	margin: 10px;
 	opacity: 0.4;
 }
@@ -274,7 +275,7 @@ h4 {
 }
 
 #projectTileThree {
-	background-color:rgba(13, 142, 228, 0.4);
+	background-color: rgba(225,204,177, 0.4);
 	margin: 10px;
 	opacity: 0.4;
 }
@@ -284,7 +285,7 @@ h4 {
 }
 
 #projectTileFour {
-	background-color:rgba(13, 142, 228, 0.4);
+	background-color: rgba(225,204,177, 0.4);
 	margin: 10px;
 	opacity: 0.4;
 }
